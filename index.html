@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Care App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header>
+        <h1>PlantCare</h1>
+      </header>
+
+      <!-- Search and Filters -->
+      <div class="controls">
+        <input
+          type="text"
+          placeholder="Search for a plant..."
+          class="search-input"
+        />
+        <select class="filter-dropdown">
+          <option value="">Filter by Sunlight</option>
+          <option value="full_sun">Full Sun</option>
+          <option value="partial_shade">Partial Shade</option>
+          <option value="shade">Shade</option>
+        </select>
+      </div>
+
+      <!-- Plant Results Grid -->
+      <section class="plant-grid">
+        <div class="plant-card">
+          <img src="https://via.placeholder.com/150" alt="Plant Image" />
+          <h2 class="plant-name">Monstera Deliciosa</h2>
+          <p class="plant-info">Bright, indirect light. Water weekly.</p>
+        </div>
+
+        <div class="plant-card">
+          <img src="https://via.placeholder.com/150" alt="Plant Image" />
+          <h2 class="plant-name">Snake Plant</h2>
+          <p class="plant-info">Low light tolerant. Water monthly.</p>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
